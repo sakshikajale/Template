@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Registration Form</title>
+</head>
+<body>
+<div>
+	<?php
+	if(isset($_POST['create'])){
+	echo 'User sbmitted.';
+}
+?>
+</div>
+	<div>
+		<form action="Registration.php" method="POST">
+			<div class="container">
+				<h1>Registration</h1>
+				<p>Fill up the Form</p>
+				
+				<label for="firstname"><b>First Name</b></label>
+				<input type="text" name="firstname" required>
+
+				<label for="lastname"><b>Last Name</b></label>
+				<input type="text" name="lastname" required>
+
+				<label for="email"><b>Email</b></label>
+				<input type="text" name="email" required>
+
+				<label for="phonenumber"><b>Phone Number</b></label>
+				<input type="text" name="phonenumber" required>
+
+				<label for="password"><b>Password</b></label>
+				<input type="text" name="password" required>
+
+				<input type="submit" name="create" value="Sign Up">
+
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

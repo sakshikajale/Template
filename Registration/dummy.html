@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+  .background {
+    width: 210mm;
+  height: 297mm;
+  background-image: url('template.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  }
+
+  .preview-container {
+    border: 1px solid #ccc; /* Add border to the preview container */
+    border-radius: 10px; /* Optional: Add border radius for visual appeal */
+    overflow: hidden; /* Hide any overflow content */
+  }
+
+  .preview-iframe {
+    width: 2000px; /* Make the iframe responsive */
+    height: 3000px; /* Set the height of the iframe */
+    margin-top: 100px;
+  }
+  .padding{
+
+    padding: 50px;
+  }
+  .A4{
+   width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col-1">
+      
+    </div>
+    <div class="col-5">
+     <h2>Registration Form</h2>
+  <form id="registrationForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+  </form>
+    </div>
+    <div  class="A4 container preview-container background  text-center padding col-5">
+      <h2>Form Preview</h2>
+  <iframe class="preview-iframe" id="previewFrame" frameborder="0" ></iframe>
+    </div>
+    <div class="col-1">
+      
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
